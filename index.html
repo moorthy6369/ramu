@@ -11,14 +11,14 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-  <script rel="preload" src="jquery.min.js"></script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script rel="preload" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+  <!-- seach bar -->
   <div class="wrapper">
     <div style="width: 15%;">
       <img src="https://docs.google.com/uc?id=1NJguv7nzggijhgrGVKLMOB6SovT9YkYM" alt="shopping GIF" width="70%" style='padding-top:23%;'>
@@ -33,13 +33,13 @@
       </form>
     </div>
   </div>
-
+  <!-- seach bar end-->
   <br />
-
+  <!-- image sliderL -->
   <div class="slider-container">
     <div class="slider">
       <div class="slide">
-        <img src="https://docs.google.com/uc?id=1HIMOkQeX3uQcknhRnmflYecZIaIjpNSa" alt="Image 1">
+        <img src="image1.jpg" alt="Image 1">
         <div class="caption">Image 1 Caption</div>
       </div>
       <div class="slide">
@@ -52,54 +52,64 @@
       </div>
     </div>
   </div>
+  <!-- image sliderL end-->
   <br>
-
+  <!-- horizontal scroll -->
   <div class="horizontal-scroll">
     <div class="horizontal-scroll__item">
       <div class="sub-container">
-        <img style="border-radius: 100%;width: 100px;height: 80px;" src="image1.jpg">
-        <p>New items</p>
+        <img  class="img2" src="image1.jpg">
+        <span class="text1">New items</span>
       </div>
     </div>
     <div class="horizontal-scroll__item">
       <div class="sub-container">
-        <img style="border-radius: 100%;width: 100px;height: 80px;" src="image1.jpg">
-        <p>Trending</p>
+        <img class="img2" src="image1.jpg">
+        <span class="text1">Trending</span>
       </div>
     </div>
     <div class="horizontal-scroll__item">
       <div class="sub-container">
-        <img style="border-radius: 100%;width: 100px;height: 80px;" src="image1.jpg">
-        <p>Offer</p>
+        <img class="img2" src="image1.jpg">
+        <span class="text1">Offer</span>
       </div>
     </div>
     <div class="horizontal-scroll__item">
       <div class="sub-container">
-        <img style="border-radius: 100%;width: 100px;height: 80px;" src="image1.jpg">
-        <p>T-shirts</p>
+        <img class="img2" src="image1.jpg">
+        <span class="text1">T-shirts</span>
       </div>
     </div>
     <div class="horizontal-scroll__item">
       <div class="sub-container">
-        <img style="border-radius: 100%;width: 100px;height: 80px;" src="image1.jpg">
-        <p>Nothing</p>
+        <img class="img2" src="image1.jpg">
+        <span class="text1">Nothing</span>
       </div>
     </div>
     <div class="horizontal-scroll__item">
       <div class="sub-container">
-        <img style="border-radius: 100%;width: 100px;height: 80px;" src="image1.jpg">
-        <p>Nothing</p>
+        <img class="img2" src="image1.jpg">
+        <span class="text1">Nothing</span>
       </div>
     </div>
-  </div><br />
+  </div>
+  <!-- horizontal scroll end-->
+  <br />
   <hr />
 
   <div class="main">
-    <h1 class="header1">Trending ant top discounted products</h1>
+    <section class="header1">
+      <div class="title-wrapper">
+        <h1 class="sweet-title">
+          <span data-text="Trending">Trending</span>
+          <span data-text="Products">Products</span>
+        </h1>
+      </div>
+    </section>
     <ul class="cards">
       <li class="cards_item">
         <div class="card">
-          <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+          <div class="card_image"><img class="img1" src="https://picsum.photos/500/300/?image=10"></div>
           <div class="card_content">
             <h2 class="card_title">Product name</h2>
             <button class="btn card_btn">Buy now</button>
@@ -108,7 +118,7 @@
       </li>
       <li class="cards_item">
         <div class="card">
-          <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+          <div class="card_image"><img class="img1" src="https://picsum.photos/500/300/?image=5"></div>
           <div class="card_content">
             <h2 class="card_title">Product name</h2>
             <button class="btn card_btn">Buy now</button>
@@ -117,7 +127,7 @@
       </li>
       <li class="cards_item">
         <div class="card">
-          <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+          <div class="card_image"><img class="img1" src="https://picsum.photos/500/300/?image=11"></div>
           <div class="card_content">
             <h2 class="card_title">Product name</h2>
             <button class="btn card_btn">Buy now</button>
@@ -126,7 +136,7 @@
       </li>
       <li class="cards_item">
         <div class="card">
-          <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
+          <div class="card_image"><img class="img1" src="https://picsum.photos/500/300/?image=14"></div>
           <div class="card_content">
             <h2 class="card_title">Product name</h2>
             <button class="btn card_btn">Buy now</button>
@@ -135,7 +145,7 @@
       </li>
       <li class="cards_item">
         <div class="card">
-          <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
+          <div class="card_image"><img class="img1" src="https://picsum.photos/500/300/?image=17"></div>
           <div class="card_content">
             <h2 class="card_title">Product name</h2>
             <button class="btn card_btn">Buy now</button>
@@ -144,7 +154,7 @@
       </li>
       <li class="cards_item">
         <div class="card">
-          <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
+          <div class="card_image"><img class="img1" src="https://picsum.photos/500/300/?image=2"></div>
           <div class="card_content">
             <h2 class="card_title">Product name</h2>
             <button class="btn card_btn">Buy now</button>
@@ -156,7 +166,52 @@
   <hr />
 
   <div>
-
+    <section class="wrapper1">
+      <div class="top1">offers %</div>
+      <div class="bottom1" aria-hidden="true">offers %</div>
+    </section>
+    <div class="cards1">
+      <div class="card1">
+        <div class="card_image"><img class="img1" src="https://picsum.photos/500/300/?image=5"></div>
+        <div>description</div>
+        <div class="text1">price !</div>
+      </div>
+      <div class="card1">
+        <div class="card_image"><img class="img1" src="https://picsum.photos/500/300/?image=5"></div>
+        <div>description</div>
+        <div class="text1">price !</div>
+      </div>
+      <div class="card1">
+        <div class="card_image"><img class="img1" src="https://picsum.photos/500/300/?image=5"></div>
+        <div>description</div>
+        <div class="text1">price !</div>
+      </div>
+      <div class="card1">
+        <div class="card_image"><img class="img1" src="https://picsum.photos/500/300/?image=5"></div>
+        <div>description</div>
+        <div class="text1">price !</div>
+      </div>
+      <div class="card1">
+        <div class="card_image"><img class="img1" src="https://picsum.photos/500/300/?image=5"></div>
+        <div>description</div>
+        <div class="text1">price !</div>
+      </div>
+      <div class="card1">
+        <div class="card_image"><img class="img1" src="https://picsum.photos/500/300/?image=5"></div>
+        <div>description</div>
+        <div class="text1">price !</div>
+      </div>
+      <div class="card1">
+        <div class="card_image"><img class="img1" src="https://picsum.photos/500/300/?image=5"></div>
+        <div>description</div>
+        <div class="text1">price !</div>
+      </div>
+      <div class="card1">
+        <div class="card_image"><img class="img1" src="https://picsum.photos/500/300/?image=5"></div>
+        <div>description</div>
+        <div class="text1">price !</div>
+      </div>
+    </div>
   </div>
 
 
