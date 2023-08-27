@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viwe product</title>
+    <link rel="stylesheet" href="v b.css">
+</head>
+
+<body>
+    <section>
+        <div class="cards2">
+            <div class="card2">◀=</div>
+            <div class="card2" style="flex-direction: row-reverse;display: flex;">🛒</div>
+        </div>
+    </section>
+    <br />
+    <!-- image sliderL -->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="image1.jpg" alt="Image 1">
+                <div class="caption">Image 1 Caption</div>
+            </div>
+            <div class="slide">
+                <img src="image2.jpg" alt="Image 2">
+                <div class="caption">Image 2 Caption</div>
+            </div>
+            <div class="slide">
+                <img src="image3.jpg" alt="Image 3">
+                <div class="caption">Image 3 Caption</div>
+            </div>
+        </div>
+    </div>
+    <!-- image sliderL end-->
+    <br />
+    <div>
+        Product description !!!
+    </div>
+    <div>
+        <span class="off_text">36% off </span><span class="original_price">₹<span >1000</span></span>
+        <span>₹<span class="off_price">740</span></span>
+    </div>
+
+    <script>
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slide');
+        let slideIndex = 0;
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function showSlide(index) {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function updateIndicator(index) {
+            const dots = indicator.querySelectorAll('.dot');
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % slides.length;
+            showSlide(slideIndex);
+        }
+
+        function prevSlide() {
+            slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+            showSlide(slideIndex);
+        }
+
+        slider.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+
+        slider.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].clientX;
+            if (touchStartX - touchEndX > 50) {
+                // Swipe left
+                nextSlide();
+            } else if (touchEndX - touchStartX > 50) {
+                // Swipe right
+                prevSlide();
+            }
+        });
+    </script>
+</body>
+
+</html>
