@@ -8,7 +8,7 @@
   <title>WINGS MG</title>
   <!-- HTML -->
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
   <script rel="preload" src="jquery.min.js"></script>
@@ -20,12 +20,14 @@
 
 <body>
   <div class="wrapper">
-    <div style="width: 15%;"></div>
+    <div style="width: 15%;">
+      <img src="https://docs.google.com/uc?id=1NJguv7nzggijhgrGVKLMOB6SovT9YkYM" alt="shopping GIF" width="70%" style='padding-top:23%;'>
+    </div>
     <div class="container1">
       <form role="search" method="get" class="search-form form" action="">
         <label>
           <span class="screen-reader-text">Search for...</span>
-          <input type="search" class="search-field" placeholder="Type something..." value="" name="s" title="" />
+          <input type="search" class="search-field" placeholder="Search product..." value="" name="s" title="" />
         </label>
         <input type="submit" class="search-submit button" value="&#xf002" />
       </form>
@@ -37,7 +39,7 @@
   <div class="slider-container">
     <div class="slider">
       <div class="slide">
-        <img src="image1.jpg" alt="Image 1">
+        <img src="https://docs.google.com/uc?id=1HIMOkQeX3uQcknhRnmflYecZIaIjpNSa" alt="Image 1">
         <div class="caption">Image 1 Caption</div>
       </div>
       <div class="slide">
@@ -54,17 +56,46 @@
 
   <div class="horizontal-scroll">
     <div class="horizontal-scroll__item">
-      <img style="border-radius: 100%;width: 100px;" src="image1.jpg">
+      <div class="sub-container">
+        <img style="border-radius: 100%;width: 100px;height: 80px;" src="image1.jpg">
+        <p>New items</p>
+      </div>
     </div>
-    <div class="horizontal-scroll__item">2</div>
-    <div class="horizontal-scroll__item">3</div>
-    <div class="horizontal-scroll__item">4</div>
-    <div class="horizontal-scroll__item">5</div>
-    <div class="horizontal-scroll__item">6</div>
-  </div>
+    <div class="horizontal-scroll__item">
+      <div class="sub-container">
+        <img style="border-radius: 100%;width: 100px;height: 80px;" src="image1.jpg">
+        <p>Trending</p>
+      </div>
+    </div>
+    <div class="horizontal-scroll__item">
+      <div class="sub-container">
+        <img style="border-radius: 100%;width: 100px;height: 80px;" src="image1.jpg">
+        <p>Offer</p>
+      </div>
+    </div>
+    <div class="horizontal-scroll__item">
+      <div class="sub-container">
+        <img style="border-radius: 100%;width: 100px;height: 80px;" src="image1.jpg">
+        <p>T-shirts</p>
+      </div>
+    </div>
+    <div class="horizontal-scroll__item">
+      <div class="sub-container">
+        <img style="border-radius: 100%;width: 100px;height: 80px;" src="image1.jpg">
+        <p>Nothing</p>
+      </div>
+    </div>
+    <div class="horizontal-scroll__item">
+      <div class="sub-container">
+        <img style="border-radius: 100%;width: 100px;height: 80px;" src="image1.jpg">
+        <p>Nothing</p>
+      </div>
+    </div>
+  </div><br />
+  <hr />
 
   <div class="main">
-    <h1>Responsive Product name</h1>
+    <h1 class="header1">Trending ant top discounted products</h1>
     <ul class="cards">
       <li class="cards_item">
         <div class="card">
@@ -122,8 +153,11 @@
       </li>
     </ul>
   </div>
+  <hr />
 
-  <h3 class="made_by">Made with RAMU ♡</h3>
+  <div>
+
+  </div>
 
 
   <script src="main.js"></script>
